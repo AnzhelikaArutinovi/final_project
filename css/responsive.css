@@ -1,0 +1,129 @@
+@media (max-width: 1326px) {
+  /* Second Section - Services - responsive */
+  .left-services-wraper {
+    transform: translateY(0%);
+  }
+  .section-services h3:nth-child(2) {
+    margin-bottom: 55px;
+  }
+  .service-block {
+    position: inherit;
+  }
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    position: inherit;
+    margin-top: 10%;
+  }
+  .service-icon img {
+    width: 70%;
+  }
+  .section-services h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .left-services-wraper,
+  .right-services-wraper {
+    width: 100%;
+  }
+}
+@media (max-width: 1235px) {
+  /* Second Section - Services - responsive */
+  .left-services-wraper,
+  .right-services-wraper {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Header - responsive */
+  .navigation {
+    display: none;
+  }
+  .header-buttons {
+    display: none;
+  }
+  .burger-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* Second Section - Services - responsive */
+  .services-wraper {
+    grid-template-columns: auto;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* Second Section - Services - responsive */
+  .service-icon {
+    display: none;
+  }
+  .service-block {
+    flex-direction: column;
+  }
+  /* Form Section elements styles */
+  .form-desc > h4 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 860px) {
+  /* Form Section elements styles */
+  .form-wraper {
+    grid-template-columns: auto;
+  }
+  .form-desc {
+    padding: 80px 50px;
+  }
+  /*  Footer Elements styles */
+  .columns-grid {
+    row-gap: 30px;
+    grid-template-columns: 80%;
+  }
+  .footer-flex {
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  /* Second Section - Services - responsive */
+  .section-services h3 {
+    font-size: 30px;
+  }
+  .service-block h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .service-block p {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  .header-wraper img {
+    width: 80%;
+  }
+  /* Form Section elements styles */
+  .form-desc,
+  .request-form {
+    padding: 30px;
+  }
+  .form-wraper {
+    box-shadow: none;
+  }
+  /*  Footer Elements styles */
+  .column > p,
+  .contact-li-col {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  /* Footer Subscribe input styles */
+  .subscribe-block > h4 {
+    font-size: 18px;
+  }
+  /* below line elements styles */
+  .copyright-text,
+  .copyright-span {
+    font-size: 12px;
+  }
+}

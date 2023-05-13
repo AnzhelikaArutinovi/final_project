@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth Hunters</title>
+    <link rel="icon" href="images/fav-icon.svg" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <button class="btn-request" type="button">Request Demo</button>
+      <nav class="overlay-navigation">
+        <ul class="overlay-ul">
+          <li class="overaly-li">
+            <a class="overlay-a" href="#">Our Service</a>
+          </li>
+          <li class="overlay-li"><a class="overlay-a" href="#">About Us</a></li>
+          <li class="overlay-li">
+            <a class="overlay-a" href="#">Blog</a>
+          </li>
+          <li class="overlay-li">
+            <a class="overlay-a" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="header-wraper header-flex">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <nav class="navigation">
+          <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-a" href="#">Our Services</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">About Us</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Blog</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <button class="btn-request" type="button">Request Demo</button>
+        </div>
+        <div class="burger-wraper">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Second Section - Services -->
+      <section class="section-services">
+        <h3>We're always ready </h3>
+        <h3>for <span>challenges</span></h3>
+        <!-- <div class="section-wraper02"> -->
+          <div class="services-wraper">
+            <div class="left-services-wraper">
+              <!-- 1st Service Block -->
+              <div class="service-block">
+                <div class="service-icon">
+                  <img src="images/monitor.png" alt="monitor-icon" />
+                </div>
+                <h4>Web Development</h4>
+                <p>
+                  Our team of experienced developers employ industry best practices to build responsive, user-friendly sites that are effective and delivering value to your organization.
+                </p>
+              </div>
+              <!-- 2nd Service Block -->
+              <div class="service-block">
+                <div class="service-icon">
+                  <img src="images/chat.png" alt="chat-icon" />
+                </div>
+                <h4>Digital Marketing</h4>
+                <p>
+                  More leads. More sales. More revenue. With a custom strategy, full-funnel ROI tracking, and data-driven insights, we'll help your business impact the metrics that matter most.
+              </div>
+            </div>
+            <div class="right-services-wraper">
+              <!-- 3rd Service Block -->
+              <div class="service-block">
+                <div class="service-icon">
+                  <img src="images/book.png" alt="book-icon" />
+                </div>
+                <h4>UI/UX Design</h4>
+                <p>
+                  From early consultations to project handover (and beyond), our team of WordPress experts understands your website's specific goals and finds technical solutions to reach them.
+                </p>
+              </div>
+              <!-- 4th Service Block -->
+              <div class="service-block">
+                <div class="service-icon">
+                  <img src="images/envelope.png" alt="envelope-icon" />
+                </div>
+                <h4>Brand Design</h4>
+                <p>
+                  We develop your visual brand identity materials to resonate with your target audience and achieve your positioning goals faster.
+                </p>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </section>
+      <!-- Form Section -->
+      <section class="section-forms">
+        <div class="form-wraper">
+        <div class="form-desc desc-flex">
+          <h4>Start a new project with us!</h4>
+          <p>Fill out the contact form or send an email to <a href="mailto:contact@growthhunters.com">contact@growthhunters.com</a></p>
+        </div>
+        <form class="request-form flex-form" action="#">
+          <input type="text" id="name-input" name="myname" placeholder="Your full name" required="">
+          <input type="email" id="email-input" name="myemail" placeholder="Your e-mail address" required="">
+          <select name="myservice" id="input-service">
+              <option value="none" selected="" disabled="" hidden="">Select Interested Service</option>
+              <option value="web_development">Web Development</option>
+              <option value="ux_ui_design">UI/UX Design</option>
+              <option value="digital_marketing">Digital Marketing</option>
+              <option value="brand_design">Brand Design</option>
+          </select>
+          <textarea class="area-details" name="details" id="message" placeholder="Drop us a message here…"></textarea>
+          <button class="btn-send" type="submit">Send now</button>
+      </form>
+    </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wraper footer-flex">
+            <div class="subscribe-block">
+                <h4>Subscribe To Our Newsletter:</h4>
+                <form class="email-block" action="#">
+                    <input type="email" id="email-subscription" name="mysubscribtionemail" placeholder="Enter your email address">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        <div class="columns-grid">
+            <div class="column">
+                <h5>About Us</h5>
+                <p>We have the confidence to provide the best service for you, with the support of Professional and Certified experts that we currently have.</p>
+            </div>
+            <div class="column">
+                <h5>Our Office</h5>
+                <p>14/16 Dimitri Arakishvili St, Tbilisi 0179</p>
+                <div class="map-wraper">
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.632785639288!2d44.761567182749175!3d41.706862402032705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473822e2cfa67%3A0xbd73ff5eede58a16!2sDigital%20Bus%20%E2%80%A2%20Academy!5e0!3m2!1sen!2sge!4v1684010838893!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="column">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li class="contact-li-col"> <i class="fa-solid fa-envelope"></i> Email : 
+                        <a href="mailto:contact@growthhunters.com">contact@growthhunters.com</a>                                            
+                    </li>
+                    <li class="contact-li-col"> <i class="fa-solid fa-phone"></i> Call Us : 
+                        <a href="tel:(+995)555112233">(+995) 555-11-22-33</a>
+                    </li>
+                </ul>
+                <div class="social-div">
+                  <a target="_blank" href="https://www.instagram.com/growthhuntr/?hl=en" class="icon icon-instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/growthhunterstbs/" class="icon icon-facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a target="_blank" href="https://www.linkedin.com/company/growth-hunters-georgia/" class="icon icon-linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a target="_blank" href="https://www.upwork.com/o/companies/~01defc37ce30cd3e36/" class="icon icon-github">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>   
+            </div>
+            <div class="column">
+              <ul class="nav-ul-col">
+                <li class="nav-li-col">
+                    <a class="nav-a-col" href="#">Privacy Policy</a>
+                </li> 
+                <li class="nav-li-col">
+                    <a class="nav-a-col" href="#">Terms & Conditions</a>
+                </li>
+            </ul>
+            </div> 
+        </div>
+    </div>
+      <hr class="line">
+			<div class="copyright-block">
+				<p class="copyright-text">Copyright © <span class="copyright-span"> Growth Hunters </span> | Designed by <span class="copyright-span"> Anzhelika Arutinovi </span> | Powered by <span class="copyright-span"> Webflow </span></p>
+			</div>
+    </footer>
+  </body>
+</html>
