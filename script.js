@@ -17,7 +17,7 @@ burgerWraper.addEventListener("click", function () {
 	burgerWraper.classList.toggle("visible");
 	headerNav.classList.toggle("hidden");
 	headerBtns.classList.toggle("hidden");
-	document.body.style.overflow = "hidden";
+	document.body.classList.toggle("body-hidden");
 });
 
 // Accordion
