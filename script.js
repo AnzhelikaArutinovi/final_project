@@ -146,3 +146,85 @@ btnPrevious.addEventListener("click", function () {
 	quoteNumber -= 1;
 	return getMemberQuote();
 });
+
+// Clients Quotes & Info
+let clientNumber = 0;
+let clientQuote = document.getElementById("client-quote");
+let clientName = document.getElementById("client-name")
+let clientCompany = document.getElementById("client-company");
+let clientQuoteList;
+let clientDataList;
+
+function getClientQuote() {
+	fetch("https://jsonplaceholder.typicode.com/comments", { method: "GET" })
+		.then(function (response) {
+			if (response.status !== 200) {
+				throw error;
+			}
+			return response.json();
+		})
+		.then(function (responseJS) {
+			clientQuoteList = responseJS.slice(0, 3);
+			clientQuote.innerText = "";
+			clientQuote.innerText = clientQuoteList[clientNumber].body;
+		})
+		.catch(function (error) {
+			clientQuote.innerText = "error";
+		});
+}
+getClientQuote();
+
+document.getElementById("btn-right").addEventListener("click", function () {
+	if (clientNumber == clientQuoteList.length - 1) {
+		clientNumber = 0;
+		return getClientQuote();
+	}
+	clientNumber += 1;
+	return getClientQuote();
+});
+document.getElementById("btn-left").addEventListener("click", function () {
+	if (clientNumber == 0) {
+		clientNumber = clientQuoteList.length - 1;
+		return getClientQuote();
+	}
+	clientNumber -= 1;
+	return getClientQuote();
+});
+
+function getClientInfo() {
+    fetch("https://jsonplaceholder.typicode.com/users", {method:"GET"})
+.then(function (response) {
+    if (response.status !== 200) {
+        throw error;
+    }
+    return response.json();
+})
+.then(function (responseJS) {
+    clientDataList = responseJS.slice(0, 3);
+    clientName.innerText = "";
+    clientCompany.innerText = "";
+    clientName.innerText = clientDataList[clientNumber].name;
+    clientCompany.innerText = clientDataList[clientNumber].company.name;
+})
+.catch(function (error) {
+    clientQuote.innerText = "error";
+});
+}
+getClientInfo();
+
+document.getElementById("btn-right").addEventListener("click", function () {
+	if (clientNumber == clientDataList.length - 1) {
+		clientNumber = 0;
+		return getClientInfo();
+	}
+	clientNumber += 1;
+	return getClientInfo();
+});
+document.getElementById("btn-left").addEventListener("click", function () {
+	if (clientNumber == 0) {
+		clientNumber = clientDataList.length - 1;
+		return getClientInfo();
+	}
+	clientNumber -= 1;
+	return getClientInfo();
+});

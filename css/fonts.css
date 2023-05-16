@@ -35,3 +35,15 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Sintony';
+    src: url('../fonts/Sintony-Bold.eot');
+    src: url('../fonts/Sintony-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Sintony-Bold.woff2') format('woff2'),
+        url('../fonts/Sintony-Bold.woff') format('woff'),
+        url('../fonts/Sintony-Bold.ttf') format('truetype'),
+        url('../fonts/Sintony-Bold.svg#Sintony-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

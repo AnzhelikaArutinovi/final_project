@@ -27,7 +27,7 @@ body {
 	align-items: center;
 	padding: 1.5rem;
 	margin: 0 auto;
-	max-width: 1400px;
+	max-width: 1440px;
 	width: 100%;
 }
 .navigation {
@@ -242,11 +242,12 @@ body {
 	color: rgba(0, 0, 0, 1);
 }
 /* Second Section - Services elements styles */
-.section-services {
-	margin: 120px 0;
-	width: 100vw;
+.section-services-wraper {
+	margin: 120px auto;
+    max-width: 1440px;
+    width: 100%;
 }
-.section-services h3,
+.section-services-wraper h3,
 .section-team h3 {
 	font-family: "Source Sans Pro";
 	font-size: 48px;
@@ -256,10 +257,10 @@ body {
 	color: rgba(0, 0, 0, 1);
 	width: 85%;
 }
-.section-services h3:nth-child(2) {
+.section-services-wraper h3:nth-child(2) {
 	margin-bottom: 100px;
 }
-.section-services span {
+.section-services-wraper span {
 	color: rgba(255, 199, 0, 1);
 }
 .services-wraper {
@@ -330,6 +331,119 @@ body {
 	max-width: 344px;
 	width: 100%;
 }
+/* About Us Section */
+.projects-wraper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-us-section h3 {
+	font-family: "Source Sans Pro";
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 54px;
+}
+.yellow-line {
+	height: 6px;
+	width: 100px;
+	background-color: rgba(255, 199, 0, 1);
+	margin: 40px 0;
+}
+.projects-text {
+	width: 40%;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 163px;
+}
+.projects-text p {
+    width: 100%;
+	font-family: "Sintony";
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.projects-photos {
+    display: grid;
+    height: auto;
+    width: 40%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    column-gap: 15px;
+    row-gap: 30px;
+}
+/* Flip Card style */
+.flip-card {
+	background-color: transparent;
+	width: 100%;
+	height: 165px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+    overflow: hidden;
+}
+.flip-card-front img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+	background-color: rgba(255, 199, 0, 1);
+	transform: rotateY(180deg);
+    width: 100%;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flip-card-back-text {
+    color: #000000;
+    width: 70%;
+    height: auto
+}
+.flip-card-back-text h4 {
+	font-family: "Source Sans Pro";
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 25px;
+    margin-bottom: 10px;
+}
+.flip-card-back-text p {
+	font-family: "Sintony";
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 24px;
+}
+
 /* Team Member Section */
 .our-team-block {
 	height: auto;
@@ -374,6 +488,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+    width: 100%;
+    height: auto;
 }
 .member-info {
 	display: grid;
@@ -412,7 +528,7 @@ body {
 #member-email {
 	font-family: "Sintony";
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: bold;
 	line-height: 17px;
 	letter-spacing: 0.5px;
 	color: #293340;
@@ -426,31 +542,101 @@ body {
 	font-weight: 400;
 	line-height: 24px;
 	color: #222a41;
-	height: 180px;
+	height: 170px;
+    width: 100%;
 }
 /* Our Clients Section */
 /* Client Quote Slider */
 .client-quote-icon {
-    font-family: 'Source Sans Pro';
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 80px;
-    letter-spacing: -1.85px;
-    text-align: center;
-    height: 58px;
-    width: 66px;
+	font-family: "Source Sans Pro";
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 80px;
+	letter-spacing: -1.85px;
+	text-align: center;
+	height: 58px;
+	width: 66px;
+	margin-top: 35px;
 }
 .client-quote-div {
-    background-color: rgba(255, 199, 0, 1);
-    width: 100%;
+	background-color: rgba(255, 199, 0, 1);
+	width: 100%;
+	position: relative;
+	height: auto;
 }
-.quote-flex {
-    display: flex;
-    align-items: center;
+.client-quote-flex {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.quote-content-wraper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 90%;
+	flex-direction: column;
+	text-align: center;
+}
+#client-quote {
+	font-family: "Sintony";
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 24px;
+}
+#client-name {
+	margin-top: 22px;
+	margin-bottom: 16px;
+	font-family: "Source Sans Pro";
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 16px;
+	letter-spacing: 0.5px;
+}
+#client-company {
+	font-family: "Sintony";
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 16px;
+	margin-bottom: 109px;
+}
+#btn-left,
+#btn-right {
+	transform: translateY(-50%);
+	top: 50%;
+	position: absolute;
+	font-size: 32px;
+	background-color: #ffffff;
+	height: 100px;
+	width: 50px;
+	text-align: center;
+}
+#btn-left {
+	left: 0;
+	border-radius: 0 12rem 12rem 0;
+}
+#btn-right {
+	right: 0;
+	border-radius: 12rem 0 0 12rem;
+}
+/* Clients Logos */
+.clients-logos {
+    width: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 60px;
+}
+.logo-flex {
+    max-width: 1440px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+    margin: 0 auto;
 }
 
 /* Accordion Elements styles */
-.faq-section h3 {
+.faq-section-wraper h3 {
 	font-family: "Source Sans Pro";
 	font-size: 48px;
 	font-weight: 900;
@@ -460,15 +646,20 @@ body {
 	color: #000000;
 	width: 85%;
 }
-.faq-section h3 span,
-.section-team h3 span {
+.faq-section-wraper h3 span,
+.section-team h3 span,
+.about-us-section h3 span {
 	color: rgba(255, 199, 0, 1);
 }
-.faq-section {
+.faq-section-wraper {
 	margin-top: 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 .faq-accordion {
 	margin: auto;
+    max-width: 1000px;
 	width: 90%;
 	gap: 5px;
 	display: flex;
@@ -609,7 +800,7 @@ body {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.05);
 	padding-bottom: 129px;
-	padding-top: 323px;
+	padding-top: 96px;
 }
 .form-wraper {
 	display: grid;
@@ -645,7 +836,7 @@ body {
 .form-desc p {
 	font-family: "Sintony";
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: normal;
 	line-height: 24px;
 	color: rgba(255, 255, 255, 1);
 	z-index: 10;
@@ -727,7 +918,7 @@ footer {
 	padding-bottom: 10px;
 }
 .footer-wraper {
-	max-width: 1400px;
+	max-width: 1440px;
 	width: 90%;
 	height: auto;
 	padding-top: 40px;
@@ -756,7 +947,7 @@ footer {
 .nav-a-col {
 	font-family: "Source Sans Pro";
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 900;
 	line-height: 30px;
 	color: rgba(255, 199, 0, 1);
 	margin-bottom: 14px;
@@ -767,6 +958,7 @@ footer {
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 24px;
+	letter-spacing: 1px;
 	color: rgba(255, 255, 255, 1);
 }
 .contact-li-col > a {
