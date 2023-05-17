@@ -228,3 +228,4 @@ document.getElementById("btn-left").addEventListener("click", function () {
 	clientNumber -= 1;
 	return getClientInfo();
 });
+

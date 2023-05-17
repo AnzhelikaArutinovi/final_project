@@ -49,7 +49,7 @@ body {
 	color: rgba(0, 0, 0, 1);
 	position: relative;
 }
-.btn-request {
+#btn-request {
 	font-family: "Source Sans Pro";
 	font-size: 14px;
 	font-weight: bold;
@@ -60,8 +60,10 @@ body {
 	background-color: rgba(255, 199, 0, 1);
 	width: 160px;
 	height: 40px;
+	text-align: center;
+	padding-top: 7px;
 }
-.fixed-header.scroll .btn-request {
+.fixed-header.scroll #btn-request {
 	background-color: rgba(0, 0, 0, 1);
 }
 .header-buttons {
@@ -196,7 +198,7 @@ body {
 	color: rgba(0, 0, 0, 1);
 	position: relative;
 }
-.overlay > .btn-request {
+.overlay > #btn-request {
 	font-family: "Source Sans Pro";
 	font-size: 14px;
 	width: 160px;
@@ -207,6 +209,7 @@ body {
 	text-align: center;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(0, 0, 0, 1);
+	text-align: center;
 }
 .hidden {
 	display: none;
@@ -244,8 +247,8 @@ body {
 /* Second Section - Services elements styles */
 .section-services-wraper {
 	margin: 120px auto;
-    max-width: 1440px;
-    width: 100%;
+	max-width: 1440px;
+	width: 100%;
 }
 .section-services-wraper h3,
 .section-team h3 {
@@ -333,13 +336,13 @@ body {
 }
 /* About Us Section */
 .projects-wraper {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .about-us-section h3 {
 	font-family: "Source Sans Pro";
@@ -362,19 +365,19 @@ body {
 	margin-left: 163px;
 }
 .projects-text p {
-    width: 100%;
+	width: 100%;
 	font-family: "Sintony";
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 24px;
 }
 .projects-photos {
-    display: grid;
-    height: auto;
-    width: 40%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-    column-gap: 15px;
-    row-gap: 30px;
+	display: grid;
+	height: auto;
+	width: 40%;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+	column-gap: 15px;
+	row-gap: 30px;
 }
 /* Flip Card style */
 .flip-card {
@@ -408,34 +411,34 @@ body {
 .flip-card-front {
 	background-color: #bbb;
 	color: black;
-    overflow: hidden;
+	overflow: hidden;
 }
 .flip-card-front img {
 	width: 100%;
-    height: 100%;
-    object-fit: cover;
+	height: 100%;
+	object-fit: cover;
 }
 
 .flip-card-back {
 	background-color: rgba(255, 199, 0, 1);
 	transform: rotateY(180deg);
-    width: 100%;
+	width: 100%;
 	height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .flip-card-back-text {
-    color: #000000;
-    width: 70%;
-    height: auto
+	color: #000000;
+	width: 70%;
+	height: auto;
 }
 .flip-card-back-text h4 {
 	font-family: "Source Sans Pro";
 	font-size: 24px;
 	font-weight: 900;
 	line-height: 25px;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .flip-card-back-text p {
 	font-family: "Sintony";
@@ -488,8 +491,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 .member-info {
 	display: grid;
@@ -543,7 +546,7 @@ body {
 	line-height: 24px;
 	color: #222a41;
 	height: 170px;
-    width: 100%;
+	width: 100%;
 }
 /* Our Clients Section */
 /* Client Quote Slider */
@@ -621,18 +624,18 @@ body {
 }
 /* Clients Logos */
 .clients-logos {
-    width: 100%;
+	width: 100%;
 	height: auto;
 	background-color: rgba(0, 0, 0, 0.05);
 	padding: 60px;
 }
 .logo-flex {
-    max-width: 1440px;
+	max-width: 1440px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 /* Accordion Elements styles */
@@ -653,13 +656,13 @@ body {
 }
 .faq-section-wraper {
 	margin-top: 50px;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
 }
 .faq-accordion {
 	margin: auto;
-    max-width: 1000px;
+	max-width: 1000px;
 	width: 90%;
 	gap: 5px;
 	display: flex;
@@ -882,6 +885,7 @@ body {
 .area-details:focus,
 #input-service:focus {
 	outline: none;
+    border-bottom: 2px solid rgba(255, 199, 0, 1);
 }
 .area-details {
 	border: none;
@@ -1033,13 +1037,13 @@ footer {
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.email-block {
+#email-block {
 	border-bottom: 1px solid rgba(255, 199, 0, 1);
 	width: 271px;
 	display: flex;
 	justify-content: space-between;
 }
-.email-block > input {
+#email-block > input {
 	border: none;
 	background-color: transparent;
 	width: 95%;
@@ -1049,17 +1053,17 @@ footer {
 	line-height: 30px;
 	color: rgba(255, 255, 255, 1);
 }
-.email-block > input::placeholder {
+#email-block > input::placeholder {
 	font-family: "Sintony";
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 24px;
 	color: rgba(255, 199, 0, 1);
 }
-.email-block > input:focus {
+#email-block > input:focus {
 	outline: none;
 }
-.email-block > button {
+#email-block > button {
 	background-color: transparent;
 }
 .fa-arrow-right {
@@ -1092,3 +1096,164 @@ footer {
 	border: 1px solid rgba(151, 151, 151, 1);
 	margin: 61px 0 17px 0;
 }
+/* Demo Sign Up */
+.section-signup {
+	max-width: 1440px;
+	width: 100%;
+	background-color: white;
+	padding: 20px 0;
+}
+.section-signup > h4 {
+	font-family: "Source Sans Pro";
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 56px;
+	color: rgba(0, 0, 0, 1);
+	z-index: 10;
+	width: 79%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.section-signup p {
+	font-family: "Sintony";
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 1);
+	z-index: 10;
+	width: 79%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.section-signup a {
+	color: rgba(255, 199, 0, 1);
+}
+#registration-form {
+	display: flex;
+	width: 35%;
+	margin: 0 auto;
+	flex-direction: column;
+	height: auto;
+	justify-content: center;
+}
+#registration-form div {
+	height: auto;
+}
+#btn-signup {
+	height: 35px;
+	width: 140px;
+	font-family: "Source Sans Pro";
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 3.08px;
+	text-align: center;
+	background-color: rgba(255, 199, 0, 1);
+}
+#registration-form div label {
+    font-family: 'Sintony';
+font-size: 15px;
+font-weight: bold;
+line-height: 24px;
+margin-right: 10px;
+}
+#registration-form div input {
+    border: none;
+	height: 33px;
+	border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+#registration-form div input:focus {
+	outline: none;
+    border-bottom: 2px solid rgba(255, 199, 0, 1);
+}
+#registration-form div input::placeholder {
+	font-family: "Sintony";
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: rgba(34, 42, 65, 1);
+}
+#registration-form div {
+    display: flex;
+    align-items: center;
+}
+#error-email.green-valid {
+    background-color: #abe8c4; 
+    color: green;
+}
+#registration-form p, #email-error {
+    background-color: #fff0f4; 
+    color: #c51244;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-family: 'Sintony';
+    font-size: 14.5px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+#error-email-subscribe {
+    color: white;
+    text-align: right;
+    font-size: 10px;
+    font-family: 'Sintony';
+    font-weight: normal;
+    width: 100%;
+}
+/* Terms & Conditions and Privacy Policy Pages */
+.section-tc, .section-privacy-policy {
+	max-width: 1440px;
+	width: 100%;
+	background-color: white;
+	padding: 20px 0;
+}
+.section-tc h4, .section-privacy-policy h4 {
+	font-family: "Source Sans Pro";
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 56px;
+	color: rgba(0, 0, 0, 1);
+	z-index: 10;
+	width: 79%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.tc-desc, .privacy-desc {
+    font-family: 'Sintony';
+font-size: 16px;
+font-weight: normal;
+line-height: 24px;
+color: rgba(34, 42, 65, 1);
+width: 85%;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 30px;
+}
+.privacy-desc a {
+    color: rgba(255, 199, 0, 1);
+}
+.ul-titles {
+    font-family: 'Source Sans Pro';
+font-size: 34px;
+font-weight: 900;
+line-height: 51px;
+width: 85%;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+.title-li {
+    margin: 10px 0;
+}
+.ul-bullets {
+    font-family: 'Sintony';
+font-size: 16px;
+font-weight: normal;
+line-height: 24px;
+color: rgba(34, 42, 65, 1);
+list-style-type: disc;
+padding-left: 30px;
+}
+

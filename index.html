@@ -16,10 +16,11 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
 		<script defer src="script.js"></script>
+		<script defer src="script-form.js"></script>
 	</head>
 	<body>
 		<div class="overlay">
-			<button class="btn-request" type="button">Request Demo</button>
+			<a id="btn-request" href="demo.html">Request Demo</a>
 			<nav class="overlay-navigation">
 				<ul class="overlay-ul">
 					<li class="overaly-li">
@@ -63,9 +64,7 @@
 					</ul>
 				</nav>
 				<div class="header-buttons">
-					<button class="btn-request" type="button">
-						Request Demo
-					</button>
+					<a id="btn-request" href="demo.html">Request Demo</a>
 				</div>
 				<div class="burger-wraper">
 					<div class="burger-line"></div>
@@ -77,74 +76,81 @@
 		<main>
 			<!-- Second Section - Services -->
 			<section class="section-services">
-                <div class="section-services-wraper">
-                   <h3>We're always ready</h3>
-				<h3>for <span>challenges</span></h3>
-				<div class="services-wraper">
-					<div class="left-services-wraper">
-						<!-- 1st Service Block -->
-						<div class="service-block">
-							<div class="service-icon">
-								<img
-									src="images/monitor.png"
-									alt="monitor-icon"
-								/>
+				<div class="section-services-wraper">
+					<h3>We're always ready</h3>
+					<h3>for <span>challenges</span></h3>
+					<div class="services-wraper">
+						<div class="left-services-wraper">
+							<!-- 1st Service Block -->
+							<div class="service-block">
+								<div class="service-icon">
+									<img
+										src="images/monitor.png"
+										alt="monitor-icon"
+									/>
+								</div>
+								<h4>Web Development</h4>
+								<p>
+									Our team of experienced developers employ
+									industry best practices to build responsive,
+									user-friendly sites that are effective and
+									delivering value to your organization.
+								</p>
 							</div>
-							<h4>Web Development</h4>
-							<p>
-								Our team of experienced developers employ
-								industry best practices to build responsive,
-								user-friendly sites that are effective and
-								delivering value to your organization.
-							</p>
+							<!-- 2nd Service Block -->
+							<div class="service-block">
+								<div class="service-icon">
+									<img
+										src="images/chat.png"
+										alt="chat-icon"
+									/>
+								</div>
+								<h4>Digital Marketing</h4>
+								<p>
+									More leads. More sales. More revenue. With a
+									custom strategy, full-funnel ROI tracking,
+									and data-driven insights, we'll help your
+									business impact the metrics that matter
+									most.
+								</p>
+							</div>
 						</div>
-						<!-- 2nd Service Block -->
-						<div class="service-block">
-							<div class="service-icon">
-								<img src="images/chat.png" alt="chat-icon" />
+						<div class="right-services-wraper">
+							<!-- 3rd Service Block -->
+							<div class="service-block">
+								<div class="service-icon">
+									<img
+										src="images/book.png"
+										alt="book-icon"
+									/>
+								</div>
+								<h4>UI/UX Design</h4>
+								<p>
+									From early consultations to project handover
+									(and beyond), our team of WordPress experts
+									understands your website's specific goals
+									and finds technical solutions to reach them.
+								</p>
 							</div>
-							<h4>Digital Marketing</h4>
-							<p>
-								More leads. More sales. More revenue. With a
-								custom strategy, full-funnel ROI tracking, and
-								data-driven insights, we'll help your business
-								impact the metrics that matter most.
-							</p>
+							<!-- 4th Service Block -->
+							<div class="service-block">
+								<div class="service-icon">
+									<img
+										src="images/envelope.png"
+										alt="envelope-icon"
+									/>
+								</div>
+								<h4>Brand Design</h4>
+								<p>
+									We develop your visual brand identity
+									materials to resonate with your target
+									audience and achieve your positioning goals
+									faster.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="right-services-wraper">
-						<!-- 3rd Service Block -->
-						<div class="service-block">
-							<div class="service-icon">
-								<img src="images/book.png" alt="book-icon" />
-							</div>
-							<h4>UI/UX Design</h4>
-							<p>
-								From early consultations to project handover
-								(and beyond), our team of WordPress experts
-								understands your website's specific goals and
-								finds technical solutions to reach them.
-							</p>
-						</div>
-						<!-- 4th Service Block -->
-						<div class="service-block">
-							<div class="service-icon">
-								<img
-									src="images/envelope.png"
-									alt="envelope-icon"
-								/>
-							</div>
-							<h4>Brand Design</h4>
-							<p>
-								We develop your visual brand identity materials
-								to resonate with your target audience and
-								achieve your positioning goals faster.
-							</p>
-						</div>
-					</div>
-				</div> 
-                </div>
-				
+				</div>
 			</section>
 			<!-- About US -->
 			<section class="about-us-section">
@@ -254,113 +260,125 @@
 			</section>
 			<!-- FAQs Section -->
 			<section class="faq-section">
-                <div class="faq-section-wraper">
-                    <h3><span>FAQs</span> about digital marketing</h3>
-                    <div class="faq-accordion">
-                        <div class="question-container">
-                            <div class="title-accordion">
-                                <h2>What is digital marketing?</h2>
-                            </div>
-                            <div class="faq-text">
-                                <p class="text-accordion">
-                                    Digital marketing, also called online marketing,
-                                    is the promotion of a brand across digital
-                                    channels to connect with potential and current
-                                    customers. Digital marketing channels include
-                                    search, social, email, and paid.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="question-container">
-                            <div class="title-accordion">
-                                <h2>Why is digital marketing important?</h2>
-                            </div>
-                            <div class="faq-text">
-                                <p class="text-accordion">
-                                    Digital marketing is important for a few
-                                    reasons, including:
-                                </p>
-                                <nav>
-                                    <ul class="accordion-ul">
-                                        <li>
-                                            <span class="ul-span">Reach:</span>
-                                            Worldwide, billions of people use the
-                                            Internet. With the Internet's reach,
-                                            your business can reach the right people
-                                            at the right time with the right
-                                            message. The result? Your marketing
-                                            campaigns perform better, resulting in
-                                            more revenue for your business.
-                                        </li>
-                                        <li>
-                                            <span class="ul-span">Targeting:</span>
-                                            Digital marketing offers immense
-                                            targeting options, from demographics to
-                                            behavior. With these targeting
-                                            capabilities, your company can optimize
-                                            its marketing spend, focusing on the
-                                            users most likely to become customers.
-                                        </li>
-                                        <li>
-                                            <span class="ul-span">Tracking:</span>
-                                            Digital marketing's performance is easy
-                                            to track. That makes answering questions
-                                            about key performance indicators (KPIs)
-                                            like conversions fast and easy. Plus,
-                                            with MarketingCloudFX, you can instantly
-                                            track each channel's contribution to
-                                            your bottom line.
-                                        </li>
-                                        <li>
-                                            <span class="ul-span"
-                                                >Customization:</span
-                                            >
-                                            Everything about digital marketing is
-                                            custom, including which strategies you
-                                            use. Compared to traditional marketing,
-                                            your business can instantly adjust its
-                                            strategies and campaigns, preventing
-                                            wasted spending.
-                                        </li>
-                                        <li>
-                                            <span class="ul-span"
-                                                >Effectiveness:</span
-                                            >
-                                            With its reach, targeting, tracking, and
-                                            customization capabilities, digital
-                                            marketing is highly effective. Companies
-                                            investing in digital marketing services
-                                            can accelerate its effectiveness, too —
-                                            as demonstrated by our clients
-                                            experiencing a 20% greater marketing
-                                            ROI.
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="question-container">
-                            <div class="title-accordion">
-                                <h2>What are the types of digital marketing?</h2>
-                            </div>
-                            <div class="faq-text">
-                                <p class="text-accordion">
-                                    The types of digital marketing include the
-                                    following:
-                                </p>
-                                <nav>
-                                    <ul class="accordion-ul">
-                                        <li>Search engine optimization</li>
-                                        <li>Pay-per-click advertising</li>
-                                        <li>Social media marketing</li>
-                                        <li>Content marketing</li>
-                                        <li>Email marketing</li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<div class="faq-section-wraper">
+					<h3><span>FAQs</span> about digital marketing</h3>
+					<div class="faq-accordion">
+						<div class="question-container">
+							<div class="title-accordion">
+								<h2>What is digital marketing?</h2>
+							</div>
+							<div class="faq-text">
+								<p class="text-accordion">
+									Digital marketing, also called online
+									marketing, is the promotion of a brand
+									across digital channels to connect with
+									potential and current customers. Digital
+									marketing channels include search, social,
+									email, and paid.
+								</p>
+							</div>
+						</div>
+						<div class="question-container">
+							<div class="title-accordion">
+								<h2>Why is digital marketing important?</h2>
+							</div>
+							<div class="faq-text">
+								<p class="text-accordion">
+									Digital marketing is important for a few
+									reasons, including:
+								</p>
+								<nav>
+									<ul class="accordion-ul">
+										<li>
+											<span class="ul-span">Reach:</span>
+											Worldwide, billions of people use
+											the Internet. With the Internet's
+											reach, your business can reach the
+											right people at the right time with
+											the right message. The result? Your
+											marketing campaigns perform better,
+											resulting in more revenue for your
+											business.
+										</li>
+										<li>
+											<span class="ul-span"
+												>Targeting:</span
+											>
+											Digital marketing offers immense
+											targeting options, from demographics
+											to behavior. With these targeting
+											capabilities, your company can
+											optimize its marketing spend,
+											focusing on the users most likely to
+											become customers.
+										</li>
+										<li>
+											<span class="ul-span"
+												>Tracking:</span
+											>
+											Digital marketing's performance is
+											easy to track. That makes answering
+											questions about key performance
+											indicators (KPIs) like conversions
+											fast and easy. Plus, with
+											MarketingCloudFX, you can instantly
+											track each channel's contribution to
+											your bottom line.
+										</li>
+										<li>
+											<span class="ul-span"
+												>Customization:</span
+											>
+											Everything about digital marketing
+											is custom, including which
+											strategies you use. Compared to
+											traditional marketing, your business
+											can instantly adjust its strategies
+											and campaigns, preventing wasted
+											spending.
+										</li>
+										<li>
+											<span class="ul-span"
+												>Effectiveness:</span
+											>
+											With its reach, targeting, tracking,
+											and customization capabilities,
+											digital marketing is highly
+											effective. Companies investing in
+											digital marketing services can
+											accelerate its effectiveness, too —
+											as demonstrated by our clients
+											experiencing a 20% greater marketing
+											ROI.
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="question-container">
+							<div class="title-accordion">
+								<h2>
+									What are the types of digital marketing?
+								</h2>
+							</div>
+							<div class="faq-text">
+								<p class="text-accordion">
+									The types of digital marketing include the
+									following:
+								</p>
+								<nav>
+									<ul class="accordion-ul">
+										<li>Search engine optimization</li>
+										<li>Pay-per-click advertising</li>
+										<li>Social media marketing</li>
+										<li>Content marketing</li>
+										<li>Email marketing</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<!-- Our Team Section -->
 			<section class="section-team">
@@ -436,25 +454,27 @@
 					</button>
 				</div>
 				<div class="clients-logos">
-                    <div class="logo-flex">
-                        <a target="_blank" href="https://www.news.com.au/"
-						><img src="images/news.png" alt="news-logo"
-					/></a>
-					<a target="_blank" href="https://www.businessinsider.com/"
-						><img
-							src="images/business-insider.png"
-							alt="business-insider-logo"
-					/></a>
-					<a target="_blank" href="https://elements.envato.com/"
-						><img src="images/envato.png" alt="envato-logo"
-					/></a>
-					<a target="_blank" href="https://www.midweek.com/"
-						><img src="images/midweek.png" alt="midweek-logo"
-					/></a>
-					<a target="_blank" href="https://www.wired.com/"
-						><img src="images/wired.png" alt="wired-logo"
-					/></a>
-                    </div>
+					<div class="logo-flex">
+						<a target="_blank" href="https://www.news.com.au/"
+							><img src="images/news.png" alt="news-logo"
+						/></a>
+						<a
+							target="_blank"
+							href="https://www.businessinsider.com/"
+							><img
+								src="images/business-insider.png"
+								alt="business-insider-logo"
+						/></a>
+						<a target="_blank" href="https://elements.envato.com/"
+							><img src="images/envato.png" alt="envato-logo"
+						/></a>
+						<a target="_blank" href="https://www.midweek.com/"
+							><img src="images/midweek.png" alt="midweek-logo"
+						/></a>
+						<a target="_blank" href="https://www.wired.com/"
+							><img src="images/wired.png" alt="wired-logo"
+						/></a>
+					</div>
 				</div>
 			</section>
 			<!-- Form Section -->
@@ -484,6 +504,7 @@
 							placeholder="Your e-mail address"
 							required=""
 						/>
+                        <p id="email-error"></p>
 						<select name="myservice" id="input-service">
 							<option
 								value="none"
@@ -517,7 +538,7 @@
 			<div class="footer-wraper footer-flex">
 				<div class="subscribe-block">
 					<h4>Subscribe To Our Newsletter:</h4>
-					<form class="email-block" action="#">
+					<form id="email-block" action="#">
 						<input
 							type="email"
 							id="email-subscription"
@@ -528,6 +549,7 @@
 							<i class="fa-solid fa-arrow-right"></i>
 						</button>
 					</form>
+					<p id="error-email-subscribe"></p>
 				</div>
 				<div class="columns-grid">
 					<div class="column">
@@ -545,11 +567,6 @@
 							<iframe
 								class="map"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.632785639288!2d44.761567182749175!3d41.706862402032705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473822e2cfa67%3A0xbd73ff5eede58a16!2sDigital%20Bus%20%E2%80%A2%20Academy!5e0!3m2!1sen!2sge!4v1684010838893!5m2!1sen!2sge"
-								width="600"
-								height="450"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
 								referrerpolicy="no-referrer-when-downgrade"
 							></iframe>
 						</div>
@@ -604,10 +621,10 @@
 					<div class="column">
 						<ul class="nav-ul-col">
 							<li class="nav-li-col">
-								<a class="nav-a-col" href="#">Privacy Policy</a>
+								<a class="nav-a-col" href="#">FAQs</a>
 							</li>
 							<li class="nav-li-col">
-								<a class="nav-a-col" href="#"
+								<a class="nav-a-col" href="#" target="_blank"
 									>Terms & Conditions</a
 								>
 							</li>
