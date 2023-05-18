@@ -15,51 +15,56 @@
 		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
-		<script defer src="script.js"></script>
-        <script defer src="script-form.js"></script>
+		<script defer src="scripts/script.js"></script>
+        <script defer src="scripts/script-email.js"></script>
+		<script defer src="scripts/script-form.js"></script>
 	</head>
 	<body>
+		<!-- Overlay of header -->
 		<div class="overlay">
 			<a id="btn-request" href="demo.html">Request Demo</a>
 			<nav class="overlay-navigation">
 				<ul class="overlay-ul">
 					<li class="overaly-li">
-						<a class="overlay-a" href="#">Our Service</a>
+						<a class="overlay-a" href="#section02">Service</a>
 					</li>
 					<li class="overlay-li">
-						<a class="overlay-a" href="#">About Us</a>
+						<a class="overlay-a" href="#section03">About Us</a>
 					</li>
 					<li class="overlay-li">
-						<a class="overlay-a" href="#">Blog</a>
+						<a class="overlay-a" href="#section04">Team</a>
 					</li>
 					<li class="overlay-li">
-						<a class="overlay-a" href="#">FAQs</a>
+						<a class="overlay-a" href="#section05">Clients</a>
 					</li>
 					<li class="overlay-li">
-						<a class="overlay-a" href="#">Contact Us</a>
+						<a class="overlay-a" href="#section06">Contact Us</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
+		<!-- Header -->
 		<header class="fixed-header">
 			<div class="header-wraper header-flex">
-				<img class="logo" src="images/logo.svg" alt="logo" />
+				<a href="#section01"
+					><img class="logo" src="images/logo.svg" alt="logo"
+				/></a>
 				<nav class="navigation">
 					<ul class="nav-ul">
 						<li class="nav-li">
-							<a class="nav-a" href="#">Our Services</a>
+							<a class="nav-a" href="#section02">Services</a>
 						</li>
 						<li class="nav-li">
-							<a class="nav-a" href="#">About Us</a>
+							<a class="nav-a" href="#section03">About Us</a>
 						</li>
 						<li class="nav-li">
-							<a class="nav-a" href="#">Blog</a>
+							<a class="nav-a" href="#section04">Team</a>
 						</li>
 						<li class="nav-li">
-							<a class="nav-a" href="#">FAQs</a>
+							<a class="nav-a" href="#section05">Clients</a>
 						</li>
 						<li class="nav-li">
-							<a class="nav-a" href="#">Contact Us</a>
+							<a class="nav-a" href="#section06">Contact Us</a>
 						</li>
 					</ul>
 				</nav>
@@ -127,7 +132,7 @@
 							<input type="checkbox" name="agree" id="agree" />
 							<label for="agree"
 								>I agree to
-								<a href="#" target="_blank">Terms & Conditions</a></label
+								<a href="tc.html" target="_blank">Terms & Conditions</a></label
 							>
 						</div>
                         <p class="error-text" id="error-agree"></p>
@@ -135,26 +140,12 @@
 					</form>
 			</section>
 		</main>
+		<!-- Footer -->
 		<footer>
 			<div class="footer-wraper footer-flex">
-				<div class="subscribe-block">
-					<h4>Subscribe To Our Newsletter:</h4>
-                    <form id="email-block" action="#">
-						<input
-							type="email"
-							id="email-subscription"
-							name="mysubscribtionemail"
-							placeholder="Enter your email address"
-						/>
-						<button type="submit">
-							<i class="fa-solid fa-arrow-right"></i>
-						</button>
-					</form>
-					<p id="error-email-subscribe"></p>
-				</div>
 				<div class="columns-grid">
 					<div class="column">
-						<h5>About Us</h5>
+						<h5><a class="a-col" href="#section03">About Us</a></h5>
 						<p>
 							We have the confidence to provide the best service
 							for you, with the support of Professional and
@@ -162,18 +153,35 @@
 						</p>
 					</div>
 					<div class="column">
-						<h5>Our Office</h5>
+						<h5>
+							<a class="a-col" href="#section06">Our Office</a>
+						</h5>
 						<p>14/16 Dimitri Arakishvili St, Tbilisi 0179</p>
 						<div class="map-wraper">
 							<iframe
 								class="map"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.632785639288!2d44.761567182749175!3d41.706862402032705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473822e2cfa67%3A0xbd73ff5eede58a16!2sDigital%20Bus%20%E2%80%A2%20Academy!5e0!3m2!1sen!2sge!4v1684010838893!5m2!1sen!2sge"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
 								referrerpolicy="no-referrer-when-downgrade"
 							></iframe>
 						</div>
 					</div>
 					<div class="column">
-						<h5>Contact Us</h5>
+						<h5>
+							<a class="a-col" href="privacy_policy.html"
+								>Privacy Policy</a
+							>
+						</h5>
+						<h5>
+							<a class="a-col" href="tc.html" target="_blank"
+								>Terms & Conditions</a
+							>
+						</h5>
+						<h5>
+							<a class="a-col" href="#section06">Contact Us</a>
+						</h5>
 						<ul>
 							<li class="contact-li-col">
 								<i class="fa-solid fa-envelope"></i> Email :
@@ -219,18 +227,21 @@
 							</a>
 						</div>
 					</div>
-					<div class="column">
-						<ul class="nav-ul-col">
-							<li class="nav-li-col">
-								<a class="nav-a-col" href="#">FAQs</a>
-							</li>
-							<li class="nav-li-col">
-								<a class="nav-a-col" href="#" target="_blank"
-									>Terms & Conditions</a
-								>
-							</li>
-						</ul>
-					</div>
+				</div>
+				<div class="subscribe-block">
+					<h4>Subscribe To Our Newsletter:</h4>
+					<form id="email-block" action="#">
+						<input
+							type="email"
+							id="email-subscription"
+							name="mysubscribtionemail"
+							placeholder="Enter your email address"
+						/>
+						<button type="submit">
+							<i class="fa-solid fa-arrow-right"></i>
+						</button>
+					</form>
+					<p id="error-email-subscribe"></p>
 				</div>
 			</div>
 			<hr class="line" />

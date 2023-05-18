@@ -1,3 +1,4 @@
+"use strict";
 // Sign-up form validation
 let formELement = document.getElementById("registration-form");
 
@@ -85,50 +86,5 @@ eyeIcon.addEventListener("click", function () {
     passwordField.setAttribute("type", "password");
     eyeIcon.classList.remove("fa-eye-slash");
     eyeIcon.classList.add("fa-eye");
-  }
-});
-
-// Email Validation for Subscribe
-
-// document.getElementById("email-block").addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     let emailSubscribe = document.getElementById("email-subscription");
-// let emailSubscribeValue = emailSubscribe.value;
-//   let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//   let textEmailError = document.getElementById("error-email-subscribe");
-
-//   if (emailSubscribeValue.match(regex)) {
-//     document.getElementById("email-block").submit();
-//   } else {
-//     textEmailError.innerText = "invalid";
-//     emailSubscribe.style.borderBottom = "2px solid white";
-//   }
-
-//   if (emailSubscribeValue == "") {
-//     textEmailError.innerText = "";
-//   }
-// });
-
-// Email Validation for Request form - contact us
-
-let requestEmailField = document.getElementById("email-input");
-
-requestEmailField.addEventListener("keyup", function () {
-  let requestEmailFieldValue = document.getElementById("email-input").value;
-  let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  let emailError = document.getElementById("email-error");
-
-  if (requestEmailFieldValue.match(regex)) {
-    emailError.innerText = "Your email is valid";
-    requestEmailField.style.borderBottom = "2px solid green";
-    document.getElementById("email-error").classList.add("green-valid");
-  } else {
-    emailError.innerText = "Your email is invalid";
- requestEmailField.style.borderBottom = "2px solid red";
-    document.getElementById("email-error").classList.remove("green-valid");
-  }
-
-  if (requestEmailFieldValue == "") {
-    emailError.innerText = " ";
   }
 });

@@ -65,7 +65,7 @@ function getMemberInfo() {
 	fetch("https://reqres.in/api/users?page=1", { method: "GET" })
 		.then(function (response) {
 			if (response.status !== 200) {
-				throw error;
+				throw response.status;
 			}
 			return response.json();
 		})
@@ -84,7 +84,19 @@ function getMemberInfo() {
 			memberPosition.innerText = memberPositionList[teamMember];
 		})
 		.catch(function (error) {
-			memberName.innerText = "error";
+            if (error == 500) {
+                document.querySelector(".member-img-div").innerHTML = "";
+                document.querySelector(".member-img-div").innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+                document.querySelector(".member-img-div").style.color = "red";}
+        if (error == 400) {
+            document.querySelector(".member-img-div").innerHTML = "";
+            document.querySelector(".member-img-div").innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+            document.querySelector(".member-img-div").style.color = "red";} 
+            else {
+                document.querySelector(".member-img-div").innerHTML = "";
+            document.querySelector(".member-img-div").innerText = "Error: Something went wrong. Please, refresh the page";
+                document.querySelector(".member-img-div").style.color = "red";
+            }
 		});
 }
 getMemberInfo();
@@ -115,7 +127,7 @@ function getMemberQuote() {
 	fetch("https://jsonplaceholder.typicode.com/comments", { method: "GET" })
 		.then(function (response) {
 			if (response.status !== 200) {
-				throw error;
+				throw response.status;
 			}
 			return response.json();
 		})
@@ -125,7 +137,19 @@ function getMemberQuote() {
 			memberQuote.innerText = quotesList[quoteNumber].body;
 		})
 		.catch(function (error) {
-			memberName.innerText = "error";
+            if (error == 500) {
+                memberQuote.innerText = "";
+                memberQuote.innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+                memberQuote.style.color = "red";}
+        if (error == 400) {
+            memberQuote.innerText= "";
+            memberQuote.innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+            memberQuote.style.color = "red";}
+            else {
+                memberQuote.innerText = "";
+                memberQuote.innerText = "Error: Something went wrong. Please, refresh the page";
+                memberQuote.style.color = "red";
+            }
 		});
 }
 getMemberQuote();
@@ -159,7 +183,7 @@ function getClientQuote() {
 	fetch("https://jsonplaceholder.typicode.com/comments", { method: "GET" })
 		.then(function (response) {
 			if (response.status !== 200) {
-				throw error;
+				throw response.status;
 			}
 			return response.json();
 		})
@@ -169,7 +193,19 @@ function getClientQuote() {
 			clientQuote.innerText = clientQuoteList[clientNumber].body;
 		})
 		.catch(function (error) {
-			clientQuote.innerText = "error";
+            if (error == 500) {
+                clientQuote.innerText = "";
+                clientQuote.innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+                clientQuote.style.color = "red";}
+        if (error == 400) {
+            clientQuote.innerText = "";
+            clientQuote.innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+            clientQuote.style.color = "red";}
+            else {
+                clientQuote.innerText = "";
+                clientQuote.innerText = "Error: Something went wrong. Please, refresh the page";
+                clientQuote.style.color = "red";
+            }
 		});
 }
 getClientQuote();
@@ -195,7 +231,7 @@ function getClientInfo() {
     fetch("https://jsonplaceholder.typicode.com/users", {method:"GET"})
 .then(function (response) {
     if (response.status !== 200) {
-        throw error;
+        throw response.status;
     }
     return response.json();
 })
@@ -207,7 +243,19 @@ function getClientInfo() {
     clientCompany.innerText = clientDataList[clientNumber].company.name;
 })
 .catch(function (error) {
-    clientQuote.innerText = "error";
+    if (error == 500) {
+        clientName.innerText = "";
+        clientName.innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+        clientName.style.color = "red";}
+if (error == 400) {
+    clientName.innerText = "";
+    clientName.innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+    clientName.style.color = "red";}
+    else {
+        clientName.innerText = "";
+        clientName.innerText = "Error: Something went wrong. Please, refresh the page";
+        clientName.style.color = "red";
+    }
 });
 }
 getClientInfo();
