@@ -1,8 +1,6 @@
 @media (max-width: 1326px) {
-	/* Second Section - Services - responsive */
+	/* Services Section - responsive */
 	.left-services-wraper {
-		-webkit-transform: translateY(0%);
-		-ms-transform: translateY(0%);
 		transform: translateY(0%);
 	}
 	.section-services h3:nth-child(2) {
@@ -20,7 +18,12 @@
 	.service-icon img {
 		width: 70%;
 	}
-	.section-services h3 {
+	.section-services h3,
+	.clients-section-wraper h3,
+	.faq-section-wraper h3,
+	.section-form-wraper h3,
+	.about-us-wraper h3,
+	.section-team-wraper h3 {
 		width: 100%;
 		text-align: center;
 	}
@@ -28,18 +31,91 @@
 	.right-services-wraper {
 		width: 100%;
 	}
+	/* Form Section */
+	.form-desc > h4 {
+		font-size: 24px;
+		line-height: 25px;
+		text-align: center;
+	}
+	.form-desc p {
+		font-size: 12px;
+		text-align: center;
+	}
+	.request-form {
+		padding: 50px 50px 20px 0;
+	}
+	.area-details {
+		height: 100px;
+	}
+	.request-form > input,
+	.area-details,
+	#input-service {
+		width: 80%;
+	}
+	.flex-form {
+		gap: 20px;
+		justify-content: center;
+		align-items: center;
+	}
 }
 @media (max-width: 1235px) {
-	/* Second Section - Services - responsive */
+	/* Services Section - responsive */
 	.left-services-wraper,
 	.right-services-wraper {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
 	}
+	/* Numbers grid */
+	.number-block {
+		height: 200px;
+		gap: 10px;
+	}
+	.number-block h4 {
+		font-size: 30px;
+	}
+	.number-block p {
+		font-size: 15px;
+	}
+	/* About US */
+	.projects-wraper {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.projects-text {
+		width: 100%;
+	}
+	.projects-photos {
+		grid-template-columns: repeat(4, auto);
+		width: 100%;
+	}
+	/* Our Team Section */
+	.our-team-block {
+		align-items: center;
+	}
+	.team-photo-wraper div:nth-child(3),
+	.team-photo-wraper div:nth-child(4) {
+		display: none;
+	}
+	.team-photo-wraper {
+		gap: 20px;
+		width: 50%;
+		height: 100%;
+	}
+	.team-photo-wraper div {
+		width: 50%;
+	}
+	.team-content-wraper {
+		width: 45%;
+	}
+	/* Footer Elements Styles */
+	.columns-grid {
+		grid-template-columns: repeat(3, 30%);
+		column-gap: 10px;
+	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 	/* Header - responsive */
 	.navigation {
 		display: none;
@@ -52,7 +128,22 @@
 		display: -ms-flexbox;
 		display: flex;
 	}
-	/* Second Section - Services - responsive */
+	/* First Section styles */
+	.first-section-wraper {
+		height: 300px;
+	}
+	h1 {
+		font-size: 50px;
+		line-height: 55px;
+		width: 90%;
+		text-align: center;
+	}
+	.first-section-yellow p {
+		font-size: 12px;
+		line-height: 17px;
+		text-align: center;
+	}
+	/* Services Section - responsive */
 	.services-wraper {
 		grid-template-columns: auto;
 		gap: 80px;
@@ -60,7 +151,7 @@
 }
 
 @media (max-width: 920px) {
-	/* Second Section - Services - responsive */
+	/* Services Section - responsive */
 	.service-icon {
 		display: none;
 	}
@@ -70,29 +161,23 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 	}
-	/* Form Section elements styles */
-	.form-desc > h4 {
-		font-size: 35px;
-		line-height: 40px;
+	/* Footer Elements Styles */
+	.column > h5,
+	.a-col,
+	.subscribe-block > h4 {
+		font-size: 15px;
+	}
+	.column > p,
+	.contact-li-col,
+	#email-block > input {
+		font-size: 12px;
+		line-height: 15px;
 	}
 }
 @media (max-width: 860px) {
 	/* Form Section elements styles */
 	.form-wraper {
 		grid-template-columns: auto;
-	}
-	.form-desc {
-		padding: 80px 50px;
-	}
-	/*  Footer Elements styles */
-	.columns-grid {
-		row-gap: 30px;
-		grid-template-columns: 80%;
-	}
-	.footer-flex {
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
 	}
 	/* Accordion elements responsive */
 	.title-accordion h2 {
@@ -101,17 +186,207 @@
 	}
 	.faq-text,
 	.accordion-ul {
-		font-size: 17px;
-		line-height: 24px;
+		font-size: 15px;
+		line-height: 20px;
 	}
+	.accordion-ul {
+		margin-top: 10px;
+	}
+
 	.title-accordion h2:before {
 		top: 18px;
 	}
+	/* Numbers grid */
+	.our-numbers-grid {
+		grid-template-columns: repeat(2, auto);
+	}
+	.number-block {
+		height: 100px;
+	}
+	/* Form Section elements styles */
+	.form-desc,
+	.request-form {
+		padding: 30px;
+	}
+	.form-wraper {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	/* About US */
+	.projects-photos {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+@media (max-width: 790px) {
+	/* First Section styles */
+	h1 {
+		font-size: 40px;
+		line-height: 45px;
+	}
+	/* Our Team Section */
+	.team-photo-wraper {
+		width: 50%;
+		justify-content: flex-end;
+	}
+	.team-content-wraper {
+		width: 100%;
+		flex-direction: row;
+	}
+	.our-team-block {
+		justify-content: center;
+	}
+	#member-quote {
+		height: 230px;
+	}
+	.team-photo-wraper div:nth-child(2) {
+		display: none;
+	}
+	.team-photo-wraper div:nth-child(1) {
+		width: 90%;
+	}
+	/* Footer Section */
+	.subscribe-block {
+		grid-column: 2;
+		justify-content: flex-start;
+		gap: 0;
+	}
+	.columns-grid {
+		grid-template-columns: repeat(2, auto);
+		column-gap: 30px;
+		width: 95%;
+	}
+}
+@media (max-width: 670px) {
+	/* Header - responsive */
+	.fixed-header {
+		height: 70px;
+	}
+	.header-flex {
+		padding: 0.5rem 1.5rem;
+	}
+	/* First Section styles */
+	.first-section-photo {
+		width: 40%;
+	}
+	.first-section-yellow {
+		width: 60%;
+	}
+	/* Our Clients Section */
+	#client-quote {
+		font-size: 13px;
+		width: 80%;
+	}
+	.projects-text {
+		font-size: 13px;
+	}
+	#btn-left,
+	#btn-right {
+		font-size: 24px;
+		height: 50px;
+		width: 25px;
+	}
+	#client-company {
+		margin-bottom: 50px;
+	}
+	/* FAQ Section */
+	.faq-section-wraper h3,
+	.section-form-wraper h3 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	/* About Us */
+	/* Flip Cards */
+	.flip-card-back-text h4 {
+		font-size: 20px;
+	}
+	.flip-card-back-text p {
+		font-size: 12px;
+	}
+	/* Our Team Section */
+	.team-photo-wraper {
+		display: none;
+	}
+	#member-quote {
+		height: 150px;
+		font-size: 12px;
+	}
+	#member-position {
+		font-size: 12px;
+	}
+	#member-name {
+		font-size: 20px;
+	}
+	/* Privacy Policy / Terms & Conditions */
+	.section-tc h4,
+	.section-privacy-policy h4 {
+		font-size: 30px;
+		line-height: 32px;
+	}
+	.privacy-desc,
+	.tc-desc,
+	.ul-bullets {
+		font-size: 12px;
+	}
+	.ul-titles {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+@media (max-width: 560px) {
+	/* Footer Elements Styles */
+	.map-wraper {
+		display: none;
+	}
+	.columns-grid {
+		grid-template-columns: auto;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.subscribe-block {
+		grid-column: 1;
+		margin-top: 20px;
+		gap: 14px;
+		width: 100%;
+	}
 }
 @media (max-width: 480px) {
-	/* Second Section - Services - responsive */
-	.section-services h3 {
+	/* Header - responsive */
+	.fixed-header {
+		height: 60px;
+	}
+	body {
+		padding-top: 50px;
+	}
+	/* First Section styles */
+	h1 {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.first-section-yellow {
+		background-image: url(../images/tablet.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+	}
+	.first-section-photo {
+		display: none;
+	}
+	.first-section-yellow p {
+		color: black;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	/* Services Section - responsive */
+	.section-services h3,
+	.clients-section-wraper h3,
+	.about-us-wraper h3,
+	.section-team-wraper h3 {
 		font-size: 30px;
+		line-height: 32px;
 	}
 	.service-block h4 {
 		font-size: 24px;
@@ -124,15 +399,6 @@
 	}
 	.header-wraper img {
 		width: 80%;
-	}
-	/* Form Section elements styles */
-	.form-desc,
-	.request-form {
-		padding: 30px;
-	}
-	.form-wraper {
-		-webkit-box-shadow: none;
-		box-shadow: none;
 	}
 	/*  Footer Elements styles */
 	.column > p,
@@ -148,5 +414,47 @@
 	.copyright-text,
 	.copyright-span {
 		font-size: 12px;
+	}
+	/* Sign-up Section */
+	.section-signup-wraper h4 {
+		font-size: 30px;
+	}
+	.section-signup-wraper p {
+		font-size: 12px;
+	}
+	/* FAQs Section */
+	.accordion-ul {
+		font-size: 12px;
+	}
+	/* Form Section */
+	.form-desc {
+		text-align: center;
+		padding: 15px;
+	}
+	.area-details {
+		height: 50px;
+		margin-bottom: 5px;
+	}
+	#name-input::placeholder,
+	#email-input::placeholder,
+	#input-service,
+	.area-details {
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.request-form {
+		padding: 15px;
+	}
+	/* About Us */
+	.projects-photos {
+		gap: 10px;
+		grid-template-columns: auto;
+	}
+	/* Our Team Section */
+	.team-content-wraper {
+		flex-direction: column;
+	}
+	#member-quote {
+		height: 200px;
 	}
 }

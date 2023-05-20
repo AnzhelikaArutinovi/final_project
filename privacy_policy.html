@@ -16,73 +16,97 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
 		<script defer src="scripts/script.js"></script>
-        <script defer src="scripts/script-email.js"></script>
+		<script defer src="scripts/script-email.js"></script>
 		<script defer src="scripts/script-form.js"></script>
 	</head>
 	<body>
-				<!-- Overlay of header -->
-                <div class="overlay">
-                    <a id="btn-request" href="demo.html">Request Demo</a>
-                    <nav class="overlay-navigation">
-                        <ul class="overlay-ul">
-                            <li class="overaly-li">
-                                <a class="overlay-a" href="#section02">Service</a>
-                            </li>
-                            <li class="overlay-li">
-                                <a class="overlay-a" href="#section03">About Us</a>
-                            </li>
-                            <li class="overlay-li">
-                                <a class="overlay-a" href="#section04">Team</a>
-                            </li>
-                            <li class="overlay-li">
-                                <a class="overlay-a" href="#section05">Clients</a>
-                            </li>
-                            <li class="overlay-li">
-                                <a class="overlay-a" href="#section06">Contact Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Header -->
-                <header class="fixed-header">
-                    <div class="header-wraper header-flex">
-                        <a href="#section01"
-                            ><img class="logo" src="images/logo.svg" alt="logo"
-                        /></a>
-                        <nav class="navigation">
-                            <ul class="nav-ul">
-                                <li class="nav-li">
-                                    <a class="nav-a" href="#section02">Services</a>
-                                </li>
-                                <li class="nav-li">
-                                    <a class="nav-a" href="#section03">About Us</a>
-                                </li>
-                                <li class="nav-li">
-                                    <a class="nav-a" href="#section04">Team</a>
-                                </li>
-                                <li class="nav-li">
-                                    <a class="nav-a" href="#section05">Clients</a>
-                                </li>
-                                <li class="nav-li">
-                                    <a class="nav-a" href="#section06">Contact Us</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header-buttons">
-                            <a id="btn-request" href="demo.html">Request Demo</a>
-                        </div>
-                        <div class="burger-wraper">
-                            <div class="burger-line"></div>
-                            <div class="burger-line"></div>
-                            <div class="burger-line"></div>
-                        </div>
-                    </div>
-                </header>
+		<!-- Overlay of header -->
+		<div class="overlay">
+			<a id="btn-request" class="js-scroll" href="#section07"
+				>Request Demo</a
+			>
+			<nav class="overlay-navigation">
+				<ul class="overlay-ul">
+					<li class="overaly-li">
+						<a class="overlay-a js-scroll" href="#section02"
+							>Service</a
+						>
+					</li>
+					<li class="overlay-li">
+						<a class="overlay-a js-scroll" href="#section03"
+							>About Us</a
+						>
+					</li>
+					<li class="overlay-li">
+						<a class="overlay-a js-scroll" href="#section04"
+							>Team</a
+						>
+					</li>
+					<li class="overlay-li">
+						<a class="overlay-a js-scroll" href="#section05"
+							>Clients</a
+						>
+					</li>
+					<li class="overlay-li">
+						<a class="overlay-a js-scroll" href="#section06"
+							>Contact Us</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Header -->
+		<header class="fixed-header">
+			<div class="header-wraper header-flex">
+				<a class="js-scroll" href="#section01"
+					><img class="logo" src="images/logo.svg" alt="logo"
+				/></a>
+				<nav class="navigation">
+					<ul class="nav-ul">
+						<li class="nav-li">
+							<a class="nav-a js-scroll" href="#section02"
+								>Services</a
+							>
+						</li>
+						<li class="nav-li">
+							<a class="nav-a js-scroll" href="#section03"
+								>About Us</a
+							>
+						</li>
+						<li class="nav-li">
+							<a class="nav-a js-scroll" href="#section04"
+								>Team</a
+							>
+						</li>
+						<li class="nav-li">
+							<a class="nav-a js-scroll" href="#section05"
+								>Clients</a
+							>
+						</li>
+						<li class="nav-li">
+							<a class="nav-a js-scroll" href="#section06"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-buttons">
+					<a id="btn-request-demo" class="js-scroll" href="#section07"
+						>Request Demo</a
+					>
+				</div>
+				<div class="burger-wraper">
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+				</div>
+			</div>
+		</header>
 		<main>
 			<!-- Privacy Policy Section -->
-			<section class="section-tc">
+			<section class="section-privacy-policy">
 				<h4>Privacy Policy</h4>
-				<p class="tc-desc">
+				<p class="privacy-desc">
 					This Privacy Policy explains how Growth Hunters ("we," "us,"
 					or "our") collects, uses, and protects the personal
 					information you provide while using the Growth Hunters
@@ -203,8 +227,8 @@
 				<p class="privacy-desc">
 					If you have any questions or concerns regarding this Privacy
 					Policy, please contact us at
-					<a href="mailto:contact@growthhunters.com"
-						>contact@growthhunters.com</a
+					<a href="mailto:contact@gh.com"
+						>contact@gh.com</a
 					>
 				</p>
 			</section>
@@ -214,16 +238,35 @@
 			<div class="footer-wraper footer-flex">
 				<div class="columns-grid">
 					<div class="column">
-						<h5><a class="a-col" href="#section03">About Us</a></h5>
+						<h5>
+							<a class="a-col js-scroll" href="#section03"
+								>About Us</a
+							>
+						</h5>
 						<p>
 							We have the confidence to provide the best service
 							for you, with the support of Professional and
 							Certified experts that we currently have.
 						</p>
+                        <h5>
+							<a
+								class="a-col"
+								href="privacy_policy.html"
+								target="_blank"
+								>Privacy Policy</a
+							>
+						</h5>
+						<h5>
+							<a class="a-col" href="tc.html" target="_blank"
+								>Terms & Conditions</a
+							>
+						</h5>
 					</div>
 					<div class="column">
 						<h5>
-							<a class="a-col" href="#section06">Our Office</a>
+							<a class="a-col js-scroll" href="#section06"
+								>Our Office</a
+							>
 						</h5>
 						<p>14/16 Dimitri Arakishvili St, Tbilisi 0179</p>
 						<div class="map-wraper">
@@ -237,31 +280,23 @@
 							></iframe>
 						</div>
 					</div>
-					<div class="column">
-						<h5>
-							<a class="a-col" href="privacy_policy.html"
-								>Privacy Policy</a
+                    <div class="column">
+                        <h5>
+							<a class="a-col js-scroll" href="#section06"
+								>Contact Us</a
 							>
-						</h5>
-						<h5>
-							<a class="a-col" href="tc.html" target="_blank"
-								>Terms & Conditions</a
-							>
-						</h5>
-						<h5>
-							<a class="a-col" href="#section06">Contact Us</a>
 						</h5>
 						<ul>
 							<li class="contact-li-col">
 								<i class="fa-solid fa-envelope"></i> Email :
-								<a href="mailto:contact@growthhunters.com"
-									>contact@growthhunters.com</a
+								<a href="mailto:contact@gh.com"
+									>contact@gh.com</a
 								>
 							</li>
 							<li class="contact-li-col">
 								<i class="fa-solid fa-phone"></i> Call Us :
 								<a href="tel:(+995)555112233"
-									>(+995) 555-11-22-33</a
+									>555 11 22 33</a
 								>
 							</li>
 						</ul>
@@ -295,22 +330,22 @@
 								<i class="fa-brands fa-github"></i>
 							</a>
 						</div>
-					</div>
-				</div>
-				<div class="subscribe-block">
-					<h4>Subscribe To Our Newsletter:</h4>
-					<form id="email-block" action="#">
-						<input
-							type="email"
-							id="email-subscription"
-							name="mysubscribtionemail"
-							placeholder="Enter your email address"
-						/>
-						<button type="submit">
-							<i class="fa-solid fa-arrow-right"></i>
-						</button>
-					</form>
-					<p id="error-email-subscribe"></p>
+                    </div>
+                    <div class="subscribe-block">
+                        <h4>Subscribe To Our Newsletter:</h4>
+                        <form id="email-block" action="#">
+                            <input
+                                type="email"
+                                id="email-subscription"
+                                name="mysubscribtionemail"
+                                placeholder="Enter your email address"
+                            />
+                            <button type="submit">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                        <p id="error-email-subscribe"></p>
+                    </div>
 				</div>
 			</div>
 			<hr class="line" />

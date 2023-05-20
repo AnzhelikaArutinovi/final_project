@@ -9,9 +9,9 @@ burgerWraper.addEventListener("click", function () {
 	let headerNav = document.querySelector(".navigation");
 	let headerBtns = document.querySelector(".header-buttons");
 
-    window.scrollTo({
-        top: 0,
-    });
+	window.scrollTo({
+		top: 0,
+	});
 	divOverlay.classList.toggle("visible");
 	headerWraper.classList.toggle("visible");
 	burgerLines.forEach((line) => {
@@ -23,14 +23,17 @@ burgerWraper.addEventListener("click", function () {
 	document.body.classList.toggle("body-hidden");
 });
 
+
 // change navbar background color when scroll
 let headerNav = document.querySelector(".fixed-header");
 
-window.addEventListener('scroll', function (e) {
-        if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight)
- headerNav.classList.add("scroll");
-    else
-        headerNav.classList.remove("scroll");
+window.addEventListener("scroll", function (e) {
+	if (
+		document.documentElement.scrollTop ||
+		document.body.scrollTop > window.innerHeight
+	)
+		headerNav.classList.add("scroll");
+	else headerNav.classList.remove("scroll");
 });
 
 // Accordion
@@ -51,7 +54,7 @@ let memberEmail = document.getElementById("member-email");
 let btnPrevious = document.getElementById("previous-member");
 let btnNext = document.getElementById("next-member");
 let totalMembers;
-// list fo Team Member positions:
+// list of Team Member positions:
 const memberPositionList = [
 	"CEO",
 	"Digital Marketing Strategist",
@@ -84,19 +87,23 @@ function getMemberInfo() {
 			memberPosition.innerText = memberPositionList[teamMember];
 		})
 		.catch(function (error) {
-            if (error == 500) {
-                document.querySelector(".member-img-div").innerHTML = "";
-                document.querySelector(".member-img-div").innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
-                document.querySelector(".member-img-div").style.color = "red";}
-        if (error == 400) {
-            document.querySelector(".member-img-div").innerHTML = "";
-            document.querySelector(".member-img-div").innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
-            document.querySelector(".member-img-div").style.color = "red";} 
-            else {
-                document.querySelector(".member-img-div").innerHTML = "";
-            document.querySelector(".member-img-div").innerText = "Error: Something went wrong. Please, refresh the page";
-                document.querySelector(".member-img-div").style.color = "red";
-            }
+			if (error == 500) {
+				document.querySelector(".member-img-div").innerHTML = "";
+				document.querySelector(".member-img-div").innerText =
+					"Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+				document.querySelector(".member-img-div").style.color = "red";
+			}
+			if (error == 400) {
+				document.querySelector(".member-img-div").innerHTML = "";
+				document.querySelector(".member-img-div").innerText =
+					"Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+				document.querySelector(".member-img-div").style.color = "red";
+			} else {
+				document.querySelector(".member-img-div").innerHTML = "";
+				document.querySelector(".member-img-div").innerText =
+					"Error: Something went wrong. Please, refresh the page";
+				document.querySelector(".member-img-div").style.color = "red";
+			}
 		});
 }
 getMemberInfo();
@@ -137,19 +144,23 @@ function getMemberQuote() {
 			memberQuote.innerText = quotesList[quoteNumber].body;
 		})
 		.catch(function (error) {
-            if (error == 500) {
-                memberQuote.innerText = "";
-                memberQuote.innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
-                memberQuote.style.color = "red";}
-        if (error == 400) {
-            memberQuote.innerText= "";
-            memberQuote.innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
-            memberQuote.style.color = "red";}
-            else {
-                memberQuote.innerText = "";
-                memberQuote.innerText = "Error: Something went wrong. Please, refresh the page";
-                memberQuote.style.color = "red";
-            }
+			if (error == 500) {
+				memberQuote.innerText = "";
+				memberQuote.innerText =
+					"Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+				memberQuote.style.color = "red";
+			}
+			if (error == 400) {
+				memberQuote.innerText = "";
+				memberQuote.innerText =
+					"Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+				memberQuote.style.color = "red";
+			} else {
+				memberQuote.innerText = "";
+				memberQuote.innerText =
+					"Error: Something went wrong. Please, refresh the page";
+				memberQuote.style.color = "red";
+			}
 		});
 }
 getMemberQuote();
@@ -174,7 +185,7 @@ btnPrevious.addEventListener("click", function () {
 // Clients Quotes & Info
 let clientNumber = 0;
 let clientQuote = document.getElementById("client-quote");
-let clientName = document.getElementById("client-name")
+let clientName = document.getElementById("client-name");
 let clientCompany = document.getElementById("client-company");
 let clientQuoteList;
 let clientDataList;
@@ -193,19 +204,23 @@ function getClientQuote() {
 			clientQuote.innerText = clientQuoteList[clientNumber].body;
 		})
 		.catch(function (error) {
-            if (error == 500) {
-                clientQuote.innerText = "";
-                clientQuote.innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
-                clientQuote.style.color = "red";}
-        if (error == 400) {
-            clientQuote.innerText = "";
-            clientQuote.innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
-            clientQuote.style.color = "red";}
-            else {
-                clientQuote.innerText = "";
-                clientQuote.innerText = "Error: Something went wrong. Please, refresh the page";
-                clientQuote.style.color = "red";
-            }
+			if (error == 500) {
+				clientQuote.innerText = "";
+				clientQuote.innerText =
+					"Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+				clientQuote.style.color = "red";
+			}
+			if (error == 400) {
+				clientQuote.innerText = "";
+				clientQuote.innerText =
+					"Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+				clientQuote.style.color = "red";
+			} else {
+				clientQuote.innerText = "";
+				clientQuote.innerText =
+					"Error: Something went wrong. Please, refresh the page";
+				clientQuote.style.color = "red";
+			}
 		});
 }
 getClientQuote();
@@ -228,35 +243,39 @@ document.getElementById("btn-left").addEventListener("click", function () {
 });
 
 function getClientInfo() {
-    fetch("https://jsonplaceholder.typicode.com/users", {method:"GET"})
-.then(function (response) {
-    if (response.status !== 200) {
-        throw response.status;
-    }
-    return response.json();
-})
-.then(function (responseJS) {
-    clientDataList = responseJS.slice(0, 3);
-    clientName.innerText = "";
-    clientCompany.innerText = "";
-    clientName.innerText = clientDataList[clientNumber].name;
-    clientCompany.innerText = clientDataList[clientNumber].company.name;
-})
-.catch(function (error) {
-    if (error == 500) {
-        clientName.innerText = "";
-        clientName.innerText = "Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
-        clientName.style.color = "red";}
-if (error == 400) {
-    clientName.innerText = "";
-    clientName.innerText = "Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
-    clientName.style.color = "red";}
-    else {
-        clientName.innerText = "";
-        clientName.innerText = "Error: Something went wrong. Please, refresh the page";
-        clientName.style.color = "red";
-    }
-});
+	fetch("https://jsonplaceholder.typicode.com/users", { method: "GET" })
+		.then(function (response) {
+			if (response.status !== 200) {
+				throw response.status;
+			}
+			return response.json();
+		})
+		.then(function (responseJS) {
+			clientDataList = responseJS.slice(0, 3);
+			clientName.innerText = "";
+			clientCompany.innerText = "";
+			clientName.innerText = clientDataList[clientNumber].name;
+			clientCompany.innerText = clientDataList[clientNumber].company.name;
+		})
+		.catch(function (error) {
+			if (error == 500) {
+				clientName.innerText = "";
+				clientName.innerText =
+					"Error: 'GENERIC', 'Something went wrong. Please try again or contact support'";
+				clientName.style.color = "red";
+			}
+			if (error == 400) {
+				clientName.innerText = "";
+				clientName.innerText =
+					"Error: 'NOT_FOUND', 'The resource you tried to access does not exist.'";
+				clientName.style.color = "red";
+			} else {
+				clientName.innerText = "";
+				clientName.innerText =
+					"Error: Something went wrong. Please, refresh the page";
+				clientName.style.color = "red";
+			}
+		});
 }
 getClientInfo();
 
@@ -277,3 +296,19 @@ document.getElementById("btn-left").addEventListener("click", function () {
 	return getClientInfo();
 });
 
+// Smooth Scroll to anchors
+const links = document.querySelectorAll('.js-scroll');
+
+links.forEach(function (elem) {
+    elem.addEventListener('click', smoothScroll)
+});
+
+function smoothScroll(e) {
+    e.preventDefault();
+    const link = this.getAttribute("href");
+    const offsetTop = document.querySelector(link).offsetTop;
+    scroll({
+        top: offsetTop -100,
+        behavior: "smooth"
+    });
+}
