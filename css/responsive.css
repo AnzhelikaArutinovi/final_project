@@ -63,6 +63,13 @@
 		    -ms-flex-align: center;
 		        align-items: center;
 	}
+    /* About Us */
+    .about-us-wraper h3::after {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
 }
 @media (max-width: 1235px) {
 	/* Services Section - responsive */

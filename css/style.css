@@ -476,10 +476,7 @@ h1 {
 	width: 100px;
 	background-color: rgba(255, 199, 0, 1);
 	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
+    left: 0;
 	bottom: -40px;
 }
 .projects-text {
