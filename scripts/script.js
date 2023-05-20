@@ -23,6 +23,52 @@ burgerWraper.addEventListener("click", function () {
 	document.body.classList.toggle("body-hidden");
 });
 
+// Click on Overlay Btn-request
+document.getElementById("btn-request").addEventListener("click", function () {
+	let divOverlay = document.querySelector(".overlay");
+	let headerWraper = document.querySelector(".header-wraper");
+	let burgerLines = document.querySelectorAll(".burger-line");
+	let headerNav = document.querySelector(".navigation");
+	let headerBtns = document.querySelector(".header-buttons");
+
+	window.scrollTo({
+		top: 0,
+	});
+	divOverlay.classList.remove("visible");
+	headerWraper.classList.remove("visible");
+	burgerLines.forEach((line) => {
+		line.classList.remove("visible");
+	});
+	burgerWraper.classList.remove("visible");
+	headerNav.classList.remove("hidden");
+	headerBtns.classList.remove("hidden");
+	document.body.classList.remove("body-hidden");
+});
+
+// Click on Overlay Navigation <a></a> tag
+document.querySelectorAll(".overlay-a").forEach((link) => {
+	link.addEventListener("click", function () {
+		let divOverlay = document.querySelector(".overlay");
+		let headerWraper = document.querySelector(".header-wraper");
+		let burgerLines = document.querySelectorAll(".burger-line");
+		let headerNav = document.querySelector(".navigation");
+		let headerBtns = document.querySelector(".header-buttons");
+
+		window.scrollTo({
+			top: 0,
+		});
+		divOverlay.classList.remove("visible");
+		headerWraper.classList.remove("visible");
+		burgerLines.forEach((line) => {
+			line.classList.remove("visible");
+		});
+		burgerWraper.classList.remove("visible");
+		headerNav.classList.remove("hidden");
+		headerBtns.classList.remove("hidden");
+		document.body.classList.remove("body-hidden");
+	});
+});
+
 // change navbar background color when scroll
 let headerNav = document.querySelector(".fixed-header");
 
