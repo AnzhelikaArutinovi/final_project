@@ -48,7 +48,8 @@ body {
 	color: rgba(0, 0, 0, 1);
 	position: relative;
 }
-#btn-request, #btn-request-demo {
+#btn-request,
+#btn-request-demo {
 	font-family: "Source Sans Pro";
 	font-size: 14px;
 	font-weight: bold;
@@ -251,7 +252,7 @@ body {
 	height: 450px;
 	display: flex;
 	align-items: center;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .first-section-yellow {
 	background-color: rgba(255, 199, 0, 1);
@@ -383,15 +384,15 @@ h1 {
 .about-us-wraper {
 	max-width: 1440px;
 	width: 100%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .projects-wraper {
 	margin: 0 auto;
-    width: 85%;
+	width: 85%;
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
-    justify-content: space-between;
+	justify-content: space-between;
 	margin-bottom: 139px;
 }
 .about-us-wraper h3 {
@@ -399,20 +400,20 @@ h1 {
 	font-size: 48px;
 	font-weight: 900;
 	line-height: 54px;
-    width: 85%;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 80px;
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 80px;
 }
 .about-us-wraper h3::after {
-    content: "";
-    display: flex;
+	content: "";
+	display: flex;
 	height: 6px;
 	width: 100px;
 	background-color: rgba(255, 199, 0, 1);
 	position: absolute;
 	left: 50%;
-    transform: translateX(-50%);
+	transform: translateX(-50%);
 	bottom: -40px;
 }
 .projects-text {
@@ -421,7 +422,7 @@ h1 {
 	gap: 10px;
 	flex-wrap: wrap;
 	flex-direction: column;
-    font-family: "Sintony";
+	font-family: "Sintony";
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 24px;
@@ -432,7 +433,7 @@ h1 {
 	width: 50%;
 	grid-template-columns: repeat(2, auto);
 	gap: 40px 20px;
-    align-content: center;
+	align-content: center;
 }
 /* Flip Card style */
 .flip-card {
@@ -541,9 +542,9 @@ h1 {
 }
 /* Team Member Section */
 .section-team-wraper {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 .our-team-block {
 	height: auto;
@@ -647,9 +648,9 @@ h1 {
 /* Our Clients Section */
 /* Client Quote Slider */
 .clients-section-wraper {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 .clients-section-wraper h3 {
 	margin-bottom: 69px;
@@ -733,7 +734,7 @@ h1 {
 	padding: 60px;
 }
 .logo-flex {
-    width: 100%;
+	width: 100%;
 	max-width: 1440px;
 	display: flex;
 	flex-wrap: wrap;
@@ -764,7 +765,7 @@ h1 {
 	width: 100%;
 	margin: 0 auto;
 	padding-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.05);
+	background-color: rgba(0, 0, 0, 0.05);
 }
 .faq-accordion {
 	margin: auto;
@@ -907,10 +908,10 @@ h1 {
 .section-form-wraper {
 	height: auto;
 	width: 100%;
-    max-width: 1440px;
-    padding-bottom: 129px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.05);
+	max-width: 1440px;
+	padding-bottom: 129px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.05);
 }
 .section-form-wraper h3 {
 	font-family: "Source Sans Pro";
@@ -1057,8 +1058,8 @@ footer {
 	width: 100%;
 	justify-content: space-between;
 	height: auto;
-    row-gap: 30px;
-    align-content: center;
+	row-gap: 30px;
+	align-content: center;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 340px));
 }
 .map-wraper {
@@ -1067,7 +1068,7 @@ footer {
 	height: 50%;
 }
 .map {
-    width: 100%;
+	width: 100%;
 }
 .column > h5,
 .a-col {
@@ -1077,16 +1078,16 @@ footer {
 	line-height: 30px;
 	color: rgba(255, 199, 0, 1);
 	margin-bottom: 14px;
-    transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .a-col:hover {
-    color: white;
-    font-size: 23px;
+	color: white;
+	font-size: 23px;
 }
 .columns-grid div:nth-child(3) ul {
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
 }
 
 .column > p,
@@ -1099,7 +1100,7 @@ footer {
 	color: rgba(255, 255, 255, 1);
 }
 .column p {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .contact-li-col > a {
 	color: rgba(151, 151, 151, 1);
@@ -1172,8 +1173,8 @@ footer {
 	align-items: flex-end;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-    grid-column: 1 / span 3;
-    margin: 0 auto;
+	grid-column: 1 / span 3;
+	margin: 0 auto;
 }
 #email-block {
 	border-bottom: 1px solid rgba(255, 199, 0, 1);
@@ -1240,9 +1241,9 @@ footer {
 	width: 100%;
 	background-color: white;
 	padding: 20px 0;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    height: auto;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	height: auto;
 }
 .section-signup-wraper > h4 {
 	font-family: "Source Sans Pro";
@@ -1272,38 +1273,38 @@ footer {
 	color: rgba(255, 199, 0, 1);
 }
 #registration-form {
-    height: auto;
-    width: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+	height: auto;
+	width: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 #registration-form div:not(:nth-child(3)) {
 	height: 57px;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: start;
-    justify-content: flex-start;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: start;
+	justify-content: flex-start;
 }
 #registration-form div:nth-child(9) {
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
+	flex-direction: row;
+	gap: 30px;
+	align-items: center;
 }
 #registration-form div:nth-child(9) input {
-    width: 20px;
+	width: 20px;
 }
 #registration-form div:nth-child(3) {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	align-items: center;
+	justify-content: space-between;
 }
 #registration-form div:nth-child(3) input {
-    width: 270px;
+	width: 270px;
 }
 #btn-signup {
 	height: 35px;
@@ -1324,11 +1325,11 @@ footer {
 }
 #registration-form div input {
 	height: 33px;
-    width: 100%;
+	width: 100%;
 	border: 1px solid rgba(0, 0, 0, 1);
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    padding-left: 5px;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	padding-left: 5px;
 }
 #registration-form div input:focus {
 	outline: none;
@@ -1342,10 +1343,11 @@ footer {
 	color: white;
 }
 #eyeIcon {
-    font-size: 20px;
+	font-size: 20px;
 }
 .green-valid#error-email,
-.green-valid#error-email-subscribe, .green-valid#email-error {
+.green-valid#error-email-subscribe,
+.green-valid#email-error {
 	background-color: #abe8c4;
 	color: green;
 }
@@ -1375,7 +1377,7 @@ footer {
 	width: 100%;
 	background-color: white;
 	padding: 20px 0;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .section-tc h4,
 .section-privacy-policy h4 {

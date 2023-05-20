@@ -23,7 +23,6 @@ burgerWraper.addEventListener("click", function () {
 	document.body.classList.toggle("body-hidden");
 });
 
-
 // change navbar background color when scroll
 let headerNav = document.querySelector(".fixed-header");
 
@@ -297,18 +296,18 @@ document.getElementById("btn-left").addEventListener("click", function () {
 });
 
 // Smooth Scroll to anchors
-const links = document.querySelectorAll('.js-scroll');
+const links = document.querySelectorAll(".js-scroll");
 
 links.forEach(function (elem) {
-    elem.addEventListener('click', smoothScroll)
+	elem.addEventListener("click", smoothScroll);
 });
 
 function smoothScroll(e) {
-    e.preventDefault();
-    const link = this.getAttribute("href");
-    const offsetTop = document.querySelector(link).offsetTop;
-    scroll({
-        top: offsetTop -100,
-        behavior: "smooth"
-    });
+	e.preventDefault();
+	const link = this.getAttribute("href");
+	const offsetTop = document.querySelector(link).offsetTop;
+	scroll({
+		top: offsetTop - 100,
+		behavior: "smooth",
+	});
 }
